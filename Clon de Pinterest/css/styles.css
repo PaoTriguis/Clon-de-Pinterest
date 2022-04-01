@@ -1,0 +1,129 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+.column{
+    flex: 15%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+@media only screen and (max-width: 1120px){
+    .lupa{
+        display: none;
+    }
+    .barra{
+        width: 600px;
+    }
+}
+@media (max-width: 800px){
+    .column{
+        flex: 30%;
+    }
+    .barra{
+        width: 400px;
+    }
+}
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+    .barra{
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    .column{
+        flex: 100%;
+    }
+    .barra{
+        display: none;
+    }
+}
+.pie-de-pagina{
+    font-size: small;
+}
+.botones{
+    list-style: none;
+    display: inline-flex;
+}
+.finder{
+    width: 950px;
+    height: 50px;
+    border-radius: 60px;
+    border: none;
+    background-color: rgb(241, 240, 240);
+    font-size: small;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+.lupa{
+    position: absolute;
+    width: 16px;
+    bottom: 46%;
+    left: 19%;
+    filter: invert(60%)
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    padding-bottom: -20px;
+}
+.iconos{
+    padding: 10px;
+    filter: invert(40%);
+    cursor: pointer;
+}
+#pinterest-icon{
+    width: 50px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.inicio{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: medium;
+    border-radius: 60px;
+    width: 90px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.today{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+.pinterest-icon{
+    padding: 10px;
+}
+.flecha{
+    filter: grayscale(100%);
+    padding: 10px;
+    cursor: pointer;
+}
+.card-image:hover{
+    filter: brightness(62%);
+}
